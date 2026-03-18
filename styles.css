@@ -110,7 +110,8 @@ a{
         position: fixed;
         left: -100%;
         top: 0;
-        background-color: var(--black-color);
+        background: transparent;
+        backdrop-filter: blur(15px);
         width: 100%;
         height: 100%;
         padding: 6rem 3.5rem 4.5rem;
@@ -462,7 +463,7 @@ a{
     animation-delay: 1.8s;
 }
 
-/* effect on clicking next */
+/* effect on clicking next (>) button*/
 .carousel.next .list .item:nth-child(1) img{
     width: 160px;
     height: 230px;
@@ -505,6 +506,94 @@ a{
         transform: translateX(0);
     }
 }
+
+/* effect on clicking prev (<) button */
+
+.carousel.prev .list .item:nth-child(2){
+    z-index: 2;
+}
+
+.carousel.prev .list .item:nth-child(2) img{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    animation: outImage .5s linear 1 forwards;
+}
+
+@keyframes outImage{
+    to{
+        width: 160px;
+        height: 230px;
+        left: 50%;
+        bottom: 30px;
+        border-radius: 50px;
+    }
+
+}
+
+.carousel.prev .thumbnail .item:nth-child(1){
+    width: 0;
+    overflow: hidden;
+    animation: showThumbnail .5s linear 1 forwards;
+}
+
+.carousel.prev .list .item:nth-child(2) .author,
+.carousel.prev .list .item:nth-child(2) .title,
+.carousel.prev .list .item:nth-child(2) .topic,
+.carousel.prev .list .item:nth-child(2) .des,
+.carousel.prev .list .item:nth-child(2) .buttons{
+    animation: outContent .5s linear 1 forwards;
+}
+
+@keyframes outContent {
+    to{
+        transform: translateX(-150px);
+        filter: blur(20px);
+        opacity: 0;
+    }
+}
+
+.carousel.next .arrows button,
+.carousel.prev .arrows button{
+    pointer-events: none;
+}
+
+.time{
+    width: 0%;
+    height: 5px;
+    background-color:rgb(78, 141, 190);
+    position: absolute;
+    z-index: 90;
+    top: 0;
+    left: 0;
+}
+
+.carousel.next .time,
+.carousel.prev .time{
+    width: 100%;
+    animation: timeRunning 2s linear 1 forwards;
+}
+
+@keyframes timeRunning{
+    to{
+        width: 0;
+    }
+}
+
+
+@media screen and (min-width:370px) and (max-width: 915px){
+    .carousel .list .item .content{
+        padding-right: 0;
+    }
+    .carousel .list .item .content .topic{
+        font-size: 30px;
+    }
+    .carousel .list .item .content .title{
+        font-size: 60px;
+    }
+}
+
+
 
 
 
