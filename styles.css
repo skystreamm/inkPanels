@@ -464,8 +464,8 @@ a{
 
 /* effect on clicking next */
 .carousel.next .list .item:nth-child(1) img{
-    width: 150px;
-    height: 220px;
+    width: 160px;
+    height: 230px;
     position: absolute;
     left: 50%;
     bottom: 50px;
@@ -484,8 +484,30 @@ a{
 }
 
 .carousel.next .thumbnail .item:nth-last-child(1){
-   
+   width: 0;
+   overflow: hidden;
+   animation: showThumbnail .5s linear 1 forwards;
 }
+
+@keyframes showThumbnail{
+    to{
+        width: 160px;
+    }
+}
+
+.carousel.next .thumbnail{
+    transform: translateX(160px);
+    animation: transformThumbnail .5s linear 1 forwards;
+}
+
+@keyframes transformThumbnail{
+    to{
+        transform: translateX(0);
+    }
+}
+
+
+
 
 
 
