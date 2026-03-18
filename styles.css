@@ -443,7 +443,7 @@ a{
     to{
         opacity: 1;
         filter: blur(0);
-        transform: trnaslateY(0);
+        transform: translateY(0);
     }
 }
 
@@ -561,9 +561,9 @@ a{
 .time{
     width: 0%;
     height: 5px;
-    background-color:rgb(78, 141, 190);
+    background-color:#f1683a;
     position: absolute;
-    z-index: 90;
+    z-index: 200;
     top: 0;
     left: 0;
 }
@@ -580,6 +580,19 @@ a{
     }
 }
 
+@media screen and (width: 360px) and (height: 740px){
+    .carousel .list .item .content{
+        padding-right: 0;
+        font-size: 13px;
+    }
+    .carousel .list .item .content .topic{
+        font-size: 25px;
+    }
+    .carousel .list .item .content .title{
+        font-size: 50px;
+    }
+}
+
 
 @media screen and (min-width:370px) and (max-width: 915px){
     .carousel .list .item .content{
@@ -592,6 +605,7 @@ a{
         font-size: 60px;
     }
 }
+
 
 
 
