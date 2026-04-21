@@ -68,7 +68,6 @@ a{
     width: 100%;
     top: 0;
     left: 0;
-    
     z-index: var(--z-modified);
 }
 
@@ -87,7 +86,7 @@ a{
     position: relative;
     height: var(--header-height);
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -150,6 +149,9 @@ a{
     }
     .navItem:nth-child(4){
         transition-delay: .4s;
+    }
+    .navItem:nth-child(5){
+        transition-delay: .5s;
     }
 }
 
