@@ -20,13 +20,12 @@ body{
 
 .form-container{
     display: flex;
-    width: 100px;
-    height: 600px;
+    width: 900px;
+    height: 500px;
     border: 3px solid rgba(255, 255, 255, 0.3);
     border-radius: 30px;
-    backdrop-filter: blur(30px);
+    backdrop-filter: blur(21px);
 }
-
 
 .col-1{
     display: flex;
@@ -35,15 +34,32 @@ body{
     flex-direction: column;
     width: 55%;
     background: rgba(255, 255, 255, 0.3);
-    backdrop-filter: blur(30px);
+    border-radius: 6% 30% 20% 6%;
     transition: border-radius .3s;
 }
 
 .image-layer{
-    position: relative;
+   position: relative;
 }
 
 .form-image-main{
-    width: 480px;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+}
+
+.form-image{
+    margin: 0;
+    padding: 0;
+    width: 100px;
+}
+
+.featured-words{
+    text-align: center;
+    font-size: small;
+    text-transform: capitalize;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: aliceblue;
+    
 }
 
