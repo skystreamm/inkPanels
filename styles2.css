@@ -84,16 +84,21 @@ body{
     background: rgba(255, 255, 255, 0.3);
     cursor: pointer;;
     color: aliceblue;
-    transition: transform .3s ease-in-out;
+    transition: transform .3s ease;
+    
 }
 
+.btn:hover{
+    transform: scale(1.1)
+}
 .btn-1{
     background: rgb(153, 89, 110);
 }
 
-.btn:hover{
-    transform: translateZ(20px);
+.btn-2{
+    box-shadow: inset 6px 3px 5px rgba(255, 255, 255, 0.3);
 }
+
 
 .login-form{
     display: flex;
@@ -122,5 +127,5 @@ body{
 
 .input-field{
     width: 100%;
-    
+
 }
