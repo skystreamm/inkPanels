@@ -63,3 +63,64 @@ body{
     
 }
 
+.col-2{
+    position: relative;
+    width: 45%;
+    padding: 20px;
+}
+
+.btn-box{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px;
+}
+
+.btn{
+    padding: 10px 35px;
+    text-align: center;
+    border: none;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.3);
+    cursor: pointer;;
+    color: aliceblue;
+    transition: transform .3s ease-in-out;
+}
+
+.btn-1{
+    background: rgb(153, 89, 110);
+}
+
+.btn:hover{
+    transform: translateZ(20px);
+}
+
+.login-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0 4vw;
+    transition: .3s;
+}
+
+.form-title{
+    margin: 40px 0;
+    text-align: center;
+    color: aliceblue;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.form-inputs{
+    width: 100%;
+}
+.input-box{
+    position: relative;
+}
+
+.input-field{
+    width: 100%;
+    
+}
